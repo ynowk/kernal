@@ -123,8 +123,8 @@ func NewWithCfg(id string, name string, appcfg interface{}) (app *App, err error
 	log.Info().Msgf("Root path: %s", app.RootPath)*/
 
 	// Display config
-	b, _ := yaml.Marshal(app.config)
-	// log.Info().Msgf("Configuration:\n%s", string(b))
+	/*b, _ := yaml.Marshal(app.config)
+	log.Info().Msgf("Configuration:\n%s", string(b))*/
 
 	// Set paths
 	app.AppPath = utl.PathJoin(app.RootPath, "app")
